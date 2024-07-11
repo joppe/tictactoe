@@ -1,0 +1,21 @@
+div.game {
+  --cell-size: 100px;
+  --size: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(var(--cell-size) * var(--size));
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+div.cell {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
